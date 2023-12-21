@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+Blog
+{% endblock title %}
+{% block body %}
+<div class="blog_main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"><a href="">SKY <span style="color: gold;">RESERVE</a></span></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock body %}

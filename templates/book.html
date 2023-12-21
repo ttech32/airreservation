@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}
+Book
+{% endblock title %}
+{% block body %}
+<div class="register_main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"><a href="">SKY <span style="color: gold;">RESERVE</a></span></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'flight' %}">Dashboard</a></li>
+                <li><a href="{% url 'book' %}">Book</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+            </ul>
+        </div>
+        <div class="forms">
+            <h2>Book Here</h2>
+            <form action="" method="POST" name="form">
+                {% csrf_token %}
+                {{form.full_name}}
+                {{form.email}}
+                {{form.phone_number}}
+                {{form.address}}
+                {{form.next_of_kin}}
+                {{form.next_of_kin_number}}
+                <p class="flight" >FLIGHT</p>
+                {{form.flight}}
+                <!--<input class="inn" type="text" name="full_name" placeholder="Full Name">
+                <input class="inn" type="text" name="email" placeholder="Email">
+                <input class="inn" type="text" name="phone_number" placeholder="Phone Number">
+                <input class="inn" type="text" name="address" placeholder="Address">
+                <input class="inn" type="text" name="next_of_kin" placeholder="Next of Kin">
+                <input class="inn" type="text" name="next_of_kin_number" placeholder="Next of Kin Number">
+                <select name="flight" class="inn">
+                    {% for flight in flights %}
+                    <option value="{{flight}}" style="color: black;">{{flight}}</option>
+                    {% endfor %}
+                </select>-->
+                
+                <!--<select name="" class="inn">
+                    <option value="User" style="color: black;">User</option>
+                    <option value="Admin" style="color: black;">Admin</option>
+                </select>-->
+                <button class="btnn" type="submit" style="margin-left: 22%;">Submit</button>
+            </form>
+            
+</div>  
+{% endblock body %}

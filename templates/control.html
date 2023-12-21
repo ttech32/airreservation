@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block title %}
+Info
+{% endblock title %}
+{% block body %}
+<div class="blog_main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"><a href="">SKY <span style="color: gold;">RESERVE</a></span></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'flight' %}">Dashboard</a></li>
+                <li><a href="{% url 'book' %}">Book</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gre">
+        <h1>Flight {{ flight.id }}</h1>
+        <ul>
+            <li>Origin: {{ flight.origin }}</li>
+            <li>Destination: {{ flight.destination }}</li>
+            <li>Duration: {{ flight.duration }}</li>
+        </ul>
+    </div>
+    
+    <div class="pass">
+        <h2>Passengers</h2>
+    </div>
+    
+    <div class="tab">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID.</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>ADDRESS</th>
+                    <th>PHONE NUMBER</th>
+                    <th>NEXT OF KIN</th>
+                    <th>NEXT OF KIN'S NUMBER</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr> 
+                {% for passenger in passengers %}
+                <tr>
+                    <td>{{ passenger.id }}</td>
+                    <td>{{ passenger.full_name }}</td>
+                    <td>{{ passenger.email }}</td>
+                    <td>{{ passenger.address }}</td>
+                    <td>{{ passenger.phone_number }}</td>
+                    <td>{{ passenger.next_of_kin }}</td>
+                    <td>{{ passenger.next_of_kin_number }}</td>
+                    <td><button class="upd"><a href="{% url 'update_passenger' passenger.id %}">UPDATE</a></button></td>
+                    <td><button class="del"><a href="{% url 'delete_passenger' passenger.id %}">DELETE</a></button></td>
+                </tr>
+                {% empty %}
+                    <tr>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                        <td>No Passenger's info</td>
+                    </tr> 
+            {% endfor %}
+            </thead>
+        </table>   
+</div>
+
+{% endblock body %}

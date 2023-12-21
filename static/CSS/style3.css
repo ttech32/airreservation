@@ -1,0 +1,45 @@
+.gree {
+    color: aqua;
+    font-size: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40%;
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.user_fly {
+    float: left;
+    margin: 3%;
+    height: 50px;
+    width: 40%;
+    padding: 20px;
+    border-radius: 30px;
+    background: goldenrod;
+    font-size: 30px;
+}
+
+.user_content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: aliceblue;
+    float: right;
+    position: relative;
+    font-size: 30px;
+}
+
+.pic {
+    width: 525px;
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 8%;
+    padding: 30px;
+    float: left;
+
+}

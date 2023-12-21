@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"><a href="">SKY <span style="color: gold;">RESERVE</a></span></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'book' %}">Book</a></li>
+            </ul>
+        </div>
+        <button class="btn" style="margin-left: 210px; border-radius: 20px;"><a href="{% url 'logout'%}">Logout</a></button>
+    </div>
+    <div class="gree"><a href="{% url 'profile' %}" style="text-decoration: none;">Hello {{request.user}}</a></div>
+    <div class="user_content">Your Flight</div>
+    <div class="user_fly">
+        {{flight}}
+    </div>
+</div>
+{% endblock body %}

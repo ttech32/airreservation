@@ -1,0 +1,239 @@
+.about_main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url('../images/flight1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.register_main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url('../images/flight3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.blog_main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url('../images/flight4.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.log {
+    width: 320px;
+    height: 450x;
+    background: linear-gradient(rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+    position: absolute;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 30%;
+    align-items: center;
+    float: left;
+
+    
+}
+
+.log h2{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: aqua;
+    margin-left: 10px;
+    
+}
+
+.log .btn{
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 70px;
+    width: 150px;
+    height: 40px;
+}
+
+.log .bax{
+    width: 240px;
+    height: 35px;
+    text-align: center;
+    align-items: center;
+    background: transparent;
+    border-bottom: 1px solid gold;
+    border-top: none;
+    border-left: none;
+    color: aliceblue;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+}
+
+.log .bax:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.fly{
+    float: left;
+    margin: 3%;
+    height: 50px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    background: goldenrod;
+
+}
+
+.fly a{
+    text-decoration: none;
+    margin-left: 20%;
+    margin-top: 20%;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.fly a:hover{
+    color: aqua;
+    transition: 2s;
+}
+
+.pass{
+    float: left;
+    margin-left: 38%;
+    width: 100%;
+    margin-top: 7%;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.pass ul{
+    color: aqua;
+}
+
+.tab{
+    float: left;
+    margin-top: 3%;
+    width: 98%;
+    color: black;
+    overflow: hidden;
+    position: sticky;
+}
+
+.tab table{
+    float: left;
+    margin-left: 2%;
+    width: 98%;
+    height: 100%;
+    background: azure;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(32,32,32,.3);
+    position: sticky;
+}
+
+.tab table th{
+    background: goldenrod;
+    
+}
+
+.tab table th, td{
+    
+   padding: 13px 15px;
+   width: 10px;
+   position: sticky;
+}
+
+.tab table td:hover{
+    background: aqua;
+    transition: .3s;
+}
+
+.gre{
+    float: left;
+    margin-left: 5%;
+    margin-top: 4%;
+    color: gold;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.gre ul{
+    color: burlywood;
+
+}
+
+.gre ul li{
+    font-size: 20px;
+    text-align: center;
+    font-size: 28px;
+    
+
+}
+
+.upd {
+    background-color: aqua;
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    border-color: aqua;
+    
+
+}
+
+.upd a{
+    text-decoration: none;
+    color: black;
+}
+
+.del {
+    background-color: red;
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    border-color: red;
+    
+
+}
+
+.del a{
+    text-decoration: none;
+    color: black;
+}
+
+.flight {
+    color: burlywood;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40%;
+    margin-top: 8%;
+    font-weight: bold;
+}

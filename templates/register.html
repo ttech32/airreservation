@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+Register
+{% endblock title %}
+{% block body %}
+<div class="register_main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo"><a href="">SKY <span style="color: gold;">RESERVE</a></span></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+            </ul>
+        </div>
+        <div class="log">
+            <h2>SIGN-UP <span style="color: goldenrod;">HERE</span></h2>
+            <form  method="POST" action="{% url 'register' %}" name="form">
+                {% csrf_token %}
+                <input class="bax" type="name" name="first_name" placeholder="ENTER FIRST NAME">
+                <input class="bax" type="name" name="last_name" placeholder="ENTER LAST NAME">
+                <input class="bax" type="name" name="username" placeholder="ENTER USERNAME">
+                <input class="bax" type="name" name="email" placeholder="ENTER EMAIL">
+                <!--<input class="bax" type="phone" name="phone_number" placeholder="ENTER PHONE NUMBER">-->
+                <input class="bax" type="password" name="password" placeholder="ENTER PASSWORD">
+                <input class="bax" type="password" name="confirm_password" placeholder="CONFIRM PASSWORD">
+                <button class="btn" type="submit" >SIGN-UP</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}
